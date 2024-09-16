@@ -26,9 +26,19 @@ const ImageDownload = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => handleDownload("png")}>Download as PNG</button>
-      <button onClick={() => handleDownload("jpeg")}>Download as JPEG</button>
+    <div className="flex space-x-4 mt-4">
+      <button
+        onClick={() => handleDownload("png")}
+        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300"
+      >
+        Download as PNG
+      </button>
+      <button
+        onClick={() => handleDownload("jpeg")}
+        className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
+      >
+        Download as JPEG
+      </button>
     </div>
   );
 };
